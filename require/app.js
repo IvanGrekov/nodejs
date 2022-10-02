@@ -35,7 +35,7 @@
     // console.log(require.cache[require.resolve('./common.js')]);
     //#endregion
 
-    //#region check if connected modules equals in cache if that's one module actually
+    //#region check if connected modules are equal if that's one module actually
     // const commonJSmodule2 = require('./common');
     // console.log('are modules equal:', commonJSmodule === commonJSmodule2);
     //#endregion
@@ -46,7 +46,7 @@
     //#endregion
 
     //#region creating record in cache for existing external module
-    // require.cache['os'] = { exports: 123 };
+    // require.cache['os'] = { exports: 123 }; // NOTE: after require command we see result from module.exports
     // const os = require('os');
     // console.log('os', os);
     //#endregion

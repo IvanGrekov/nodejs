@@ -37,14 +37,6 @@ console.log('module', module);
 // console.log('exports', exports);
 //#endregion
 
-//#region changing exports variable
-// module.exports = { x: 1 };
-// exports = { y: 1 };
-
-// console.log('module.exports', module.exports);
-// console.log('exports', exports);
-//#endregion
-
 //#region changing module variable
 // module = { foo: 'bar', exports: { x: 1 } };
 
