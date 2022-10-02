@@ -25,7 +25,9 @@ console.log('module', module);
 // })('filename', 'dirname', 'requreObj', 'requreObj.main', 'requreObj.main.exports');
 //#endregion
 
+//#region what on the module if change exports var in that module
 // console.log('commonJSapp', commonJSapp);
+//#endregion
 
 //#region changing exports variable
 // module.exports = { x: 1 };
