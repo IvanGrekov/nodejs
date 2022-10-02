@@ -1,0 +1,51 @@
+const commonJSapp = require('./commonJS-app');
+
+//#region variables
+console.log('__filename', __filename);
+console.log('__dirname', __dirname);
+
+// console.log('require', require);
+
+console.log('module', module);
+
+// console.log('exports', exports);
+
+// console.log('exports === module.exports', exports === module.exports);
+// console.log('module === require.main', module === require.main);
+// console.log('exports === require.main.exports', exports === require.main.exports);
+//#endregion
+
+//#region how node implements module variables
+// (function (__filename, __dirname, require, module, exports) {
+//     console.log('__filename', __filename);
+//     console.log('__dirname', __dirname);
+//     console.log('require', require);
+//     console.log('module', module);
+//     console.log('exports', exports);
+// })('filename', 'dirname', 'requreObj', 'requreObj.main', 'requreObj.main.exports');
+//#endregion
+
+// console.log('commonJSapp', commonJSapp);
+
+//#region changing exports variable
+// module.exports = { x: 1 };
+// exports = { y: 1 };
+
+// console.log('module.exports', module.exports);
+// console.log('exports', exports);
+//#endregion
+
+//#region changing exports variable
+// module.exports = { x: 1 };
+// exports = { y: 1 };
+
+// console.log('module.exports', module.exports);
+// console.log('exports', exports);
+//#endregion
+
+//#region changing module variable
+// module = { foo: 'bar', exports: { x: 1 } };
+
+// console.log(require.main);
+// console.log(module);
+//#endregion
