@@ -15,7 +15,10 @@
     //#endregion
 
     //#region check how many times es module executes
+    // const esModule1 = await import('./esModule.mjs');
     // const esModule2 = await import('./esModule.mjs');
+
+    // console.log(esModule1 === esModule2);
     //#endregion
 
     //#region check if there is es module in cache
@@ -55,7 +58,20 @@
     // require.cache['os'] = { exports: 123 };
     // const os = require('node:os');
     // console.log('os', os);
+    // console.log('cache', require.cache);
     //#endregion
 
     // console.log(require);
+
+    //#region checking cache if we connect module lodash
+    // const _ = require('lodash');
+    // console.log(_);
+    // console.log('cache', require.cache);
+    //#endregion
+
+    //#region checking cache if we connect module path
+    const path = require('path');
+    console.log(path);
+    console.log('cache', require.cache);
+    //#endregion
 })();

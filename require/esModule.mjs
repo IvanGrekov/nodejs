@@ -1,4 +1,4 @@
-// console.log('esModule');
+console.log('esModule');
 
 export default {
     module: 'ES module',
