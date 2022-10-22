@@ -1,4 +1,4 @@
-import { add, subtract } from './actions.mjs';
+import { add, subtract } from './actions.mjs'; // NOTE: file ext is required for import
 import { number } from './number.mjs';
 
 console.log('number', number);

@@ -1,5 +1,5 @@
-const { add, subtract } = require('./actions.js');
-const number = require('./number.js');
+const { add, subtract } = require('./actions');
+const number = require('./number');
 
 console.log('number', number);
 
