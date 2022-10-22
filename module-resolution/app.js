@@ -43,5 +43,5 @@
 //#endregion
 
 //#region paths for standard module (fs)
-console.log(require.resolve.paths('fs'));
+// console.log(require.resolve.paths('fs'));
 //#endregion
