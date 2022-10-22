@@ -12,5 +12,6 @@ console.log('someFunc() =', someFunc());
 console.log('sayHello() =', sayHello());
 
 // To show url of the module
+console.log(import.meta);
 console.log(import.meta.url);
 console.log(new URL('./app.mjs', import.meta.url));

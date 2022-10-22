@@ -2,6 +2,8 @@ import { add, subtract } from './actions.js'; // NOTE: require an ext
 import { someFunc } from './common.cjs'; // NOTE: require .cjs for common modules
 import { sayHello } from 'a';
 
+console.log('sayHello', sayHello);
+
 // NOTE: no .json
 // NOTE: no NODE_PATH to import local modules like external
 // NOTE: no require, module, exports, __filename, __dirname
