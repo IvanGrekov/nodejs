@@ -19,6 +19,8 @@
     // const esModule2 = await import('./esModule.mjs');
 
     // console.log(esModule1 === esModule2);
+
+    // console.log(require.cache);
     //#endregion
 
     //#region check if there is es module in cache
@@ -27,7 +29,12 @@
 
     //#region deleting module from cache
     // delete require.cache[require.resolve('./common.js')];
+
+    // console.log(require.cache);
+
     // const commonJSmodule2 = require('./common');
+
+    // console.log(require.cache);
     //#endregion
 
     //#region check cache by path
@@ -41,15 +48,19 @@
     //#region check if connected modules are equal if that's one module actually
     // const commonJSmodule2 = require('./common');
     // console.log('are modules equal:', commonJSmodule === commonJSmodule2);
+    // console.log(require.cache);
     //#endregion
 
     //#region creating record in cache
+    // const esModule = await import('./esModule.mjs');
     // require.cache['esModule.mjs'] = { exports: esModule };
     // console.log('cache', require.cache);
+    // console.log('esModule', esModule.default);
     //#endregion
 
     //#region creating record in cache for existing external module
     // require.cache['os'] = { exports: 123 }; // NOTE: after require command we see result from module.exports
+    // console.log(require.cache);
     // const os = require('os');
     // console.log('os', os);
     //#endregion
@@ -58,6 +69,9 @@
     // require.cache['os'] = { exports: 123 };
     // const os = require('node:os');
     // console.log('os', os);
+    // console.log('cache', require.cache);
+
+    // const os = require('os');
     // console.log('cache', require.cache);
     //#endregion
 
@@ -70,8 +84,8 @@
     //#endregion
 
     //#region checking cache if we connect module path
-    const path = require('path');
-    console.log(path);
-    console.log('cache', require.cache);
+    // const path = require('path');
+    // console.log(path);
+    // console.log('cache', require.cache);
     //#endregion
 })();
