@@ -4,6 +4,6 @@
 //     bar: 'foo',
 // };
 
-exports = {
-    bar: 'foo',
-};
+// exports = {
+//     bar: 'foo',
+// };

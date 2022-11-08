@@ -38,11 +38,11 @@ const commonJSapp = require('./commonJS-app');
 //#endregion
 
 //#region changing module variable
-// console.log(require.main);
-// console.log(module);
+// console.log('require.main', require.main);
+// console.log('module', module);
 
 // module = { foo: 'bar', exports: { x: 1 } };
 
-// console.log(require.main);
-// console.log(module);
+// console.log('require.main', require.main);
+// console.log('module', module);
 //#endregion
