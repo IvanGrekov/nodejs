@@ -1,5 +1,8 @@
 (async () => {
-    const commonJSmodule = require('./common');
+    const commonJSmodule = require('./common.js');
+
+    // console.log(require);
+    // console.log(require.resolve('lodash'));
 
     //#region checking require.cache
     // console.log(require.cache);
@@ -25,6 +28,8 @@
 
     //#region check if there is es module in cache
     // const esModule = await import('./esModule.mjs');
+
+    // console.log(require);
     //#endregion
 
     //#region deleting module from cache
@@ -42,6 +47,7 @@
     //#endregion
 
     //#region check cache by path with help of require.resolve
+    // console.log(require.resolve('./common'));
     // console.log(require.cache[require.resolve('./common.js')]);
     //#endregion
 
@@ -75,12 +81,10 @@
     // console.log('cache', require.cache);
     //#endregion
 
-    // console.log(require);
-
     //#region checking cache if we connect module lodash
-    // const _ = require('lodash');
+    const _ = require('lodash');
     // console.log(_);
-    // console.log('cache', require.cache);
+    console.log('cache', require.cache);
     //#endregion
 
     //#region checking cache if we connect module path
