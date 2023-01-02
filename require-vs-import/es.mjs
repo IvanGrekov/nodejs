@@ -1,6 +1,6 @@
 export default {
-    foo: 'bar',
+    x: 1,
     type: 'ES module',
 };
 
-export const foo = 'bar';
+export const y = 2;

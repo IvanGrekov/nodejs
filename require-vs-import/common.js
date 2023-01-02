@@ -1,4 +1,4 @@
 module.exports = {
-    foo: 'bar',
+    x: 1,
     type: 'CommonJS',
 };
