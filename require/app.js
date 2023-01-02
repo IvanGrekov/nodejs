@@ -1,4 +1,5 @@
 (async () => {
+    const path = require('path');
     const commonJSmodule = require('./common.js');
 
     // console.log(require);
@@ -6,6 +7,11 @@
 
     //#region checking require.cache
     // console.log(require.cache);
+    // console.log(require.cache['/Users/standarduser/projects/nodejs/require/common.js']);
+    // console.log('require.resolve', require.resolve('./common.js'));
+    // console.log('path.resolve', path.resolve('./common.js'));
+    // console.log('require.cache[module]', require.cache[require.resolve('./common.js')]);
+    // console.log('require.cache[module]', require.cache[module.filename]);
     //#endregion
 
     //#region checking require var
@@ -33,13 +39,14 @@
     //#endregion
 
     //#region deleting module from cache
-    // delete require.cache[require.resolve('./common.js')];
+    // delete require.cache[require.resolve('./common')];
 
     // console.log(require.cache);
 
     // const commonJSmodule2 = require('./common');
 
     // console.log(require.cache);
+    // console.log('commonJSmodule === commonJSmodule2', commonJSmodule === commonJSmodule2);
     //#endregion
 
     //#region check cache by path
@@ -58,10 +65,12 @@
     //#endregion
 
     //#region creating record in cache
+    // console.log(require.resolve('./esModule.mjs'));
+
     // const esModule = await import('./esModule.mjs');
-    // require.cache['esModule.mjs'] = { exports: esModule };
+    // require.cache[require.resolve('./esModule.mjs')] = { exports: esModule };
     // console.log('cache', require.cache);
-    // console.log('esModule', esModule.default);
+    // console.log('esModule', esModule);
     //#endregion
 
     //#region creating record in cache for existing external module
@@ -82,9 +91,9 @@
     //#endregion
 
     //#region checking cache if we connect module lodash
-    const _ = require('lodash');
+    // const _ = require('lodash');
     // console.log(_);
-    console.log('cache', require.cache);
+    // console.log('cache', require.cache);
     //#endregion
 
     //#region checking cache if we connect module path
