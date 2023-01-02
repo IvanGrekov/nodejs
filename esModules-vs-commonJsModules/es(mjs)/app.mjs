@@ -14,4 +14,5 @@ import { sayHello } from 'a';
 // To show url of the module
 // console.log(import.meta);
 // console.log(import.meta.url);
-console.log(new URL('../../app.js', import.meta.url).pathname);
+// console.log(new URL('../../app.js', import.meta.url).pathname);
+console.log(new URL('../commonJs/appp.js', import.meta.url).pathname);
