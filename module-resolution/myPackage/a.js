@@ -1,4 +1,4 @@
 module.exports = {
-    name: 'k',
+    name: 'a from myPackage',
     ext: 'js',
 };

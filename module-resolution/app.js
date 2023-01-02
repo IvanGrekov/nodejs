@@ -21,7 +21,7 @@
 // console.log(require.resolve.paths('os'));
 //#endregion
 
-//#region conect modules with help of just names (require node_modules or with help of NODE_PATH=./module-resolution node app.js)
+//#region conect modules with help of just names
 // const a = require('a');
 // const b = require('b');
 // const c = require('c');
@@ -43,6 +43,13 @@
 // console.log(k);
 
 // console.log(require.resolve.paths('a'));
+//#endregion
+
+//#region conect modules with help of just names (require node_modules or with help of NODE_PATH=./module-resolution node app.js)
+const a = require('myPackage/a');
+// console.log(require.resolve.paths('myPackage/a'));
+
+// console.log(a);
 //#endregion
 
 //#region paths for standard module (fs)
