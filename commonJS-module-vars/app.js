@@ -35,6 +35,9 @@ const commonJSapp = require('./commonJS-app');
 
 // console.log('module.exports', module.exports);
 // console.log('exports', exports);
+
+// exports.x = 5;
+// console.log('module.exports', module.exports);
 //#endregion
 
 //#region changing module variable
